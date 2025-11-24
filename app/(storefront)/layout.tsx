@@ -1,3 +1,6 @@
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
 export default function StorefrontLayout({
   children,
 }: {
@@ -5,9 +8,9 @@ export default function StorefrontLayout({
 }) {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header will go here */}
+      <Header />
       <main className="flex-1">{children}</main>
-      {/* Footer will go here */}
+      <Footer />
     </div>
   );
 }

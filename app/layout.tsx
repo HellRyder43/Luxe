@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, JetBrains_Mono } from "next/font/google";
+import { CartDrawer } from "@/components/commerce/CartDrawer";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -43,7 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans text-premium antialiased">{children}</body>
+      <body className="font-sans text-premium antialiased">
+        {children}
+        <CartDrawer />
+      </body>
     </html>
   );
 }
