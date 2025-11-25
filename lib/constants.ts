@@ -97,12 +97,12 @@ export const PRIMARY_NAV: NavItem[] = [
     label: "COLLECTIONS",
     href: "/collections",
     children: [
-      { label: "Raya Edition", href: "/collections/raya" },
-      { label: "Minimalist Essentials", href: "/collections/minimalist" },
-      { label: "Office & Work", href: "/collections/office" },
-      { label: "Weekend Casual", href: "/collections/weekend" },
-      { label: "Special Occasions", href: "/collections/special" },
-      { label: "Sustainable Line", href: "/collections/sustainable" },
+      { label: "Raya Edition", href: "/collections" },
+      { label: "Minimalist Essentials", href: "/collections" },
+      { label: "Office & Work", href: "/collections" },
+      { label: "Weekend Casual", href: "/collections" },
+      { label: "Special Occasions", href: "/collections" },
+      { label: "Sustainable Line", href: "/collections" },
     ],
   },
   {
