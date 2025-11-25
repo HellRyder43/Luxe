@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { PRIMARY_NAV } from "@/lib/constants";
+import { MobileNav } from "./MobileNav";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 export function Header() {
@@ -19,24 +21,38 @@ export function Header() {
       <div className="border-b border-[0.5px] border-neutral-200">
         <div className="container flex h-10 items-center justify-between px-4 text-sm tracking-wide">
           <div className="flex items-center gap-6">
-            <Link href="/track-order" className="hover:text-premium-gold transition-colors duration-300">
-              Track Order
-            </Link>
-            <Link href="/store-locator" className="hover:text-premium-gold transition-colors duration-300">
-              Store Locator
-            </Link>
-            <Link href="/help" className="hover:text-premium-gold transition-colors duration-300">
-              Help & FAQs
-            </Link>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Link href="/track-order" className="hover:text-premium-gold transition-colors duration-300">
+                Track Order
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Link href="/store-locator" className="hover:text-premium-gold transition-colors duration-300">
+                Store Locator
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Link href="/help" className="hover:text-premium-gold transition-colors duration-300">
+                Help & FAQs
+              </Link>
+            </motion.div>
           </div>
           <div className="flex items-center gap-4">
-            <button className="hover:text-premium-gold transition-colors duration-300">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="hover:text-premium-gold transition-colors duration-300"
+            >
               EN
-            </button>
+            </motion.button>
             <span className="text-neutral-300">|</span>
-            <button className="text-premium-taupe hover:text-premium-gold transition-colors duration-300">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+            >
               BM
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
@@ -62,13 +78,25 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">
           {PRIMARY_NAV.map((item) => (
-            <Link
+            <motion.div
               key={item.label}
-              href={item.href}
-              className="text-sm font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
+              className="relative"
+              whileHover={{ y: -2 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              {item.label}
-            </Link>
+              <Link
+                href={item.href}
+                className="text-sm font-light tracking-wide uppercase text-premium-black hover:text-premium-gold transition-colors duration-300"
+              >
+                {item.label}
+              </Link>
+              <motion.div
+                className="absolute -bottom-1 left-0 right-0 h-[0.5px] bg-premium-gold origin-left"
+                initial={{ scaleX: 0 }}
+                whileHover={{ scaleX: 1 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              />
+            </motion.div>
           ))}
         </nav>
 
@@ -112,7 +140,7 @@ export function Header() {
             {totalItems > 0 && (
               <Badge
                 variant="default"
-                className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] bg-premium-black"
+                className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] bg-premium-black text-white"
               >
                 {totalItems}
               </Badge>
@@ -121,23 +149,12 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay - Placeholder for now */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[120px] bg-background z-50 p-6">
-          <nav className="flex flex-col gap-6">
-            {PRIMARY_NAV.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-xl font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
+      {/* Mobile Navigation */}
+      <MobileNav
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        navItems={PRIMARY_NAV}
+      />
     </header>
   );
 }

@@ -101,7 +101,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       {/* Product Detail */}
       <section className="mx-auto max-w-[1600px] px-6 py-12 md:px-12 md:py-16">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[60%_40%] lg:gap-16">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[3fr_2fr] lg:gap-16">
           {/* Left: Image Gallery */}
           <div className="space-y-4">
             {/* Primary Image */}

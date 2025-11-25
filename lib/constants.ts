@@ -269,7 +269,7 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [
       {
         id: "img-004-1",
-        url: "https://images.unsplash.com/photo-1602810318660-d2c5a7e0d8c7?w=800&h=1067&fit=crop",
+        url: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=1067&fit=crop",
         alt: "Cotton Oxford Shirt in White",
         isPrimary: true,
       },
@@ -284,7 +284,7 @@ export const MOCK_PRODUCTS: Product[] = [
         images: [
           {
             id: "img-004-1",
-            url: "https://images.unsplash.com/photo-1602810318660-d2c5a7e0d8c7?w=800&h=1067&fit=crop",
+            url: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=1067&fit=crop",
             alt: "White Oxford Shirt",
             isPrimary: true,
           },

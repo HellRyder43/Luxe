@@ -174,7 +174,7 @@ export function Footer() {
               />
               <Button
                 type="submit"
-                className="w-full bg-premium-black hover:shadow-lift transition-all duration-300"
+                className="w-full bg-premium-black text-white hover:shadow-lift transition-all duration-300"
               >
                 Subscribe
               </Button>

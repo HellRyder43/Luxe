@@ -39,7 +39,7 @@ export function CartDrawer() {
             <Button
               onClick={toggleCart}
               asChild
-              className="bg-premium-black hover:shadow-lift transition-all duration-300"
+              className="bg-premium-black text-white hover:shadow-lift transition-all duration-300"
             >
               <Link href="/products">Start Shopping</Link>
             </Button>
@@ -128,7 +128,7 @@ export function CartDrawer() {
               </p>
               <Button
                 asChild
-                className="w-full bg-premium-black hover:shadow-lift transition-all duration-300 h-14"
+                className="w-full bg-premium-black text-white hover:shadow-lift transition-all duration-300 h-14"
               >
                 <Link href="/checkout" onClick={toggleCart}>
                   Proceed to Checkout
