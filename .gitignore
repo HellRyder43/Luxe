@@ -48,3 +48,11 @@ next-env.d.ts
 Thumbs.db
 nul
 .playwright-mcp/
+
+# Project documentation (internal only)
+CLAUDE.md
+claude.md
+tasktracker.md
+tailwind.config.md
+*.todo
+*.notes
