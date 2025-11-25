@@ -109,7 +109,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         {/* Product Info */}
         <div className="space-y-1">
           {/* Category */}
-          <p className="text-xs tracking-wider uppercase text-premium-taupe">
+          <p className="text-sm tracking-wider uppercase text-premium-taupe">
             {product.category}
           </p>
 

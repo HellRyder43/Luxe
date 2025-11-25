@@ -17,7 +17,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-[0.5px] border-neutral-200 bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       {/* Top Utility Bar */}
       <div className="border-b border-[0.5px] border-neutral-200">
-        <div className="container flex h-10 items-center justify-between px-4 text-xs tracking-wide">
+        <div className="container flex h-10 items-center justify-between px-4 text-sm tracking-wide">
           <div className="flex items-center gap-6">
             <Link href="/track-order" className="hover:text-premium-gold transition-colors duration-300">
               Track Order
@@ -65,7 +65,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-xs font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
+              className="text-sm font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
             >
               {item.label}
             </Link>
@@ -129,7 +129,7 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-lg font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
+                className="text-xl font-light tracking-wide uppercase hover:text-premium-gold transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}

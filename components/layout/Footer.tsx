@@ -13,14 +13,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
           {/* Column 1: Shop */}
           <div>
-            <h3 className="font-serif text-lg font-normal mb-6 text-premium-black">
+            <h3 className="font-serif text-xl font-normal mb-6 text-premium-black">
               Shop
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/products?filter=new"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   New Arrivals
                 </Link>
@@ -28,7 +28,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/products?sort=best-selling"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Best Sellers
                 </Link>
@@ -36,7 +36,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/products?filter=sale"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Sale Items
                 </Link>
@@ -44,7 +44,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/gift-cards"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Gift Cards
                 </Link>
@@ -52,7 +52,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/size-guide"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Size Guide
                 </Link>
@@ -62,14 +62,14 @@ export function Footer() {
 
           {/* Column 2: Customer Care */}
           <div>
-            <h3 className="font-serif text-lg font-normal mb-6 text-premium-black">
+            <h3 className="font-serif text-xl font-normal mb-6 text-premium-black">
               Customer Care
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/contact"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Contact Us
                 </Link>
@@ -77,7 +77,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/shipping"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Shipping Information
                 </Link>
@@ -85,7 +85,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/returns"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Returns & Exchanges
                 </Link>
@@ -93,7 +93,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/payment-methods"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Payment Methods
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/faq"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   FAQ
                 </Link>
@@ -111,14 +111,14 @@ export function Footer() {
 
           {/* Column 3: About */}
           <div>
-            <h3 className="font-serif text-lg font-normal mb-6 text-premium-black">
+            <h3 className="font-serif text-xl font-normal mb-6 text-premium-black">
               About
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/about"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Our Story
                 </Link>
@@ -126,7 +126,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/sustainability"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Sustainability
                 </Link>
@@ -134,7 +134,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/press"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Press & Media
                 </Link>
@@ -142,7 +142,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/careers"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Careers
                 </Link>
@@ -150,7 +150,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/stores"
-                  className="text-sm font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
+                  className="text-base font-light text-premium-taupe hover:text-premium-gold transition-colors duration-300"
                 >
                   Store Locations
                 </Link>
@@ -160,11 +160,11 @@ export function Footer() {
 
           {/* Column 4: Connect */}
           <div>
-            <h3 className="font-serif text-lg font-normal mb-6 text-premium-black">
+            <h3 className="font-serif text-xl font-normal mb-6 text-premium-black">
               Connect
             </h3>
             <form className="space-y-3">
-              <p className="text-sm font-light text-premium-taupe mb-4">
+              <p className="text-base font-light text-premium-taupe mb-4">
                 Subscribe to receive updates, access to exclusive deals, and more.
               </p>
               <Input
@@ -208,7 +208,7 @@ export function Footer() {
         <div className="border-t border-[0.5px] border-neutral-200 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Legal Links */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-xs text-premium-taupe">
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-premium-taupe">
               <Link
                 href="/terms"
                 className="hover:text-premium-gold transition-colors duration-300"
@@ -230,13 +230,13 @@ export function Footer() {
             </div>
 
             {/* Copyright */}
-            <p className="text-xs text-premium-taupe">
+            <p className="text-sm text-premium-taupe">
               © {currentYear} LuxeMYS. All rights reserved.
             </p>
           </div>
 
           {/* Payment Icons */}
-          <div className="flex justify-center md:justify-end gap-3 mt-6 text-xs text-premium-taupe">
+          <div className="flex justify-center md:justify-end gap-3 mt-6 text-sm text-premium-taupe">
             <span>FPX</span>
             <span>•</span>
             <span>Visa</span>

@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       {/* Breadcrumbs */}
       <nav className="border-b border-neutral-200/50" aria-label="Breadcrumb">
         <div className="mx-auto max-w-[1600px] px-6 py-4 md:px-12">
-          <ol className="flex items-center gap-2 text-xs font-normal uppercase tracking-wider text-premium-taupe">
+          <ol className="flex items-center gap-2 text-sm font-normal uppercase tracking-wider text-premium-taupe">
             <li>
               <Link href="/" className="hover:text-premium-black transition-colors">
                 Home
