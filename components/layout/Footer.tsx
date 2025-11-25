@@ -245,7 +245,7 @@ export function Footer() {
             <span>•</span>
             <span>GrabPay</span>
             <span>•</span>
-            <span>Touch 'n Go</span>
+            <span>Touch &apos;n Go</span>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -20,11 +20,11 @@ const config = {
     extend: {
       fontFamily: {
         // HEADINGS: Editorial/Premium feel
-        serif: ["var(--font-playfair)", ...fontFamily.serif],
+        serif: ["var(--font-playfair)", ...defaultTheme.fontFamily.serif],
         // BODY: Clean/Modern feel
-        sans: ["var(--font-inter)", ...fontFamily.sans],
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
         // ACCENT: For special callouts (optional)
-        mono: ["var(--font-jetbrains)", ...fontFamily.mono],
+        mono: ["var(--font-jetbrains)", ...defaultTheme.fontFamily.mono],
       },
       fontSize: {
         // Custom sizes for better hierarchy
@@ -328,12 +328,6 @@ const config = {
     // require("@tailwindcss/forms"),
     // require("@tailwindcss/container-queries"),
   ],
-  // Custom CSS variable definitions
-  corePlugins: {
-    // Ensure these are enabled for best performance
-    preflight: true,
-    container: true,
-  },
 } satisfies Config;
 
 export default config;

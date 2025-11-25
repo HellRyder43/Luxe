@@ -20,9 +20,9 @@ export function Editorial() {
             Our Philosophy
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-light text-premium-black mb-8 leading-[1.3] tracking-tight">
-            Quiet luxury isn't about logos.
+            Quiet luxury isn&apos;t about logos.
             <br />
-            It's about knowing.
+            It&apos;s about knowing.
           </h2>
           <div className="space-y-6 text-lg md:text-xl font-light leading-relaxed text-premium-taupe">
             <p>
@@ -31,7 +31,7 @@ export function Editorial() {
               exceptional quality, refined aesthetic, and enduring appeal.
             </p>
             <p>
-              Crafted from the world's finest materials and designed with the
+              Crafted from the world&apos;s finest materials and designed with the
               modern Malaysian lifestyle in mind, our pieces speak softly but
               carry profound sophistication.
             </p>
