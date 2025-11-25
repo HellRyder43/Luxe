@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { CartDrawer } from "@/components/commerce/CartDrawer";
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className="font-sans text-premium antialiased">
         {children}
         <CartDrawer />
+        <Analytics />
       </body>
     </html>
   );
