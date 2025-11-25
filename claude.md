@@ -17,7 +17,7 @@ We are building a high-end, "Quiet Luxury" e-commerce clothing store tailored fo
 - **Icons:** lucide-react (^0.5.0) (Use extremely thin stroke weights, stroke-width={1.5}).
 - **Animation:** framer-motion ^12.0.0 (Crucial for premium feel).
 - **State Management:** Zustand ^5.0.0 (Cart) or React Context.
-- **Package Manager:** pnpm (recommended) or npm.
+- **Package Manager:** npm.
 
 ## 3. Design & Styling Architecture
 
